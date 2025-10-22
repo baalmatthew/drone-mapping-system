@@ -28,7 +28,7 @@ class ImageSaver(Node):
         self.image_sub = self.create_subscription(Image, self.image_topic, self.image_callback, 10)
         self.pose_sub = self.create_subscription(Odometry, self.pose_topic, self.pose_callback, 10)
 
-        self.get_logger().info('📸 ImageSaver node started')
+        self.get_logger().info('ImageSaver node started')
 
     def pose_callback(self, msg):
         self.current_pose = msg.pose.pose
