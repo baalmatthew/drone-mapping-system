@@ -1,0 +1,19 @@
+# ROS2
+build/
+install/
+log/
+*.pyc
+__pycache__/
+
+# PX4
+*.swp
+*.swo
+*~
+
+# Python
+*.egg-info/
+.pytest_cache/
+
+# Симуляция
+*.ulg
+*.log
